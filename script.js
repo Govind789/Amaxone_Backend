@@ -1,12 +1,14 @@
 const express = require('express');
 const productRouter = require('./routes/productsRoutes.js');
 const userRouter = require('./routes/usersRoutes.js');
+const userReviewRouter = require('./routes/reviewRoutes.js');
 const mongoose = require('mongoose');
 
 const app = express();
 app.use(express.json());
 app.use('/api/products',productRouter);
 app.use('/api/users',userRouter);
+app.use('/api/review',userReviewRouter);
 
 const url = 'mongodb+srv://$_USERNAME_$:$_PASSWORD_$@cluster0.k26rrh3.mongodb.net/$_DB_NAME_$?retryWrites=true&w=majority&appName=Cluster0'
 
@@ -26,12 +28,6 @@ mongoose.connect(dbLink)
         })
 
 app.listen(3000,()=>console.log("app connected"));
-
-
-
-
-
-
 
 
 // const express = require('express');

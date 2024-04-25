@@ -16,7 +16,7 @@ const getAllReviews = async (req, res) => {
             message: err.message,
         });
     }
-}
+};
 
 const createReview = async (req, res) => {
     try {
@@ -35,7 +35,7 @@ const createReview = async (req, res) => {
             message: err.message,
         });
     }
-}
+};
 
 const updateReview = async (req, res) => {
     try {
@@ -62,7 +62,7 @@ const updateReview = async (req, res) => {
             message: err.message,
         });
     }
-}
+};
 
 const deleteReview = async (req, res) => {
     try {
@@ -85,7 +85,7 @@ const deleteReview = async (req, res) => {
             message: err.message,
         });
     }
-}
+};
 
 const getOneReview = async (req, res) => {
     try {
@@ -111,7 +111,7 @@ const getOneReview = async (req, res) => {
             message: err.message,
         });
     }
-}
+};
 
 const getReviewsByProductId = async (req, res) => {
     try {
@@ -137,7 +137,7 @@ const getReviewsByProductId = async (req, res) => {
             message: err.message,
         });
     }
-}
+};
 
 module.exports = {
     getAllReviews,

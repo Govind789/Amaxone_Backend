@@ -13,6 +13,6 @@ reviewRouter.route('/:id')
     .delete(userReviewController.deleteReview);
 
 reviewRouter.route('/product/:id')
-    .get(reviewController.getReviewsByProductId)
+    .get(userReviewController.getReviewsByProductId)
 
 module.exports = reviewRouter;
